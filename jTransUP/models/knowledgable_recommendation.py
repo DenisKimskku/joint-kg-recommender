@@ -402,9 +402,9 @@ def train_loop(FLAGS, model, trainer, rating_train_dataset, triple_train_dataset
         # Gradient descent step.
         trainer.optimizer_step()
         if trainer.step % 10 < step_to_switch :
-            rec_total_loss += losses.data[0]
+            rec_total_loss += losses.data#error#
         else:
-            kg_total_loss += losses.data[0]
+            kg_total_loss += losses.data
         pbar.update(1)
     
 
