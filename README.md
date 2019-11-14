@@ -102,8 +102,3 @@ If you use our code, please cite our paper:
   year={2019}
 }
 ```
-### Issues
-
-1. Visualization does not work- tensor to json file?
-2. Early stopping leads to terminate too early :( maybe deleting it will works?
-3. Need to change the file-type error.. conflict between tensor.data and python data type(sol: tensor.data[0] to tensor.data
