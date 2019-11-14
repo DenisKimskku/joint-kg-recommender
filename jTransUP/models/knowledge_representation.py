@@ -214,7 +214,7 @@ def train_loop(FLAGS, model, trainer, train_dataset, eval_datasets,
 
         # Gradient descent step.
         trainer.optimizer_step()
-        total_loss += losses.data[0]
+        total_loss += losses.data
         pbar.update(1)
     trainer.save(trainer.checkpoint_path + '_final')
 
